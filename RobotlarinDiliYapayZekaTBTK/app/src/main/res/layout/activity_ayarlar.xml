@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyarlarActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="KULLANILAN GPT MODELİ"/>
+
+        <Spinner
+            android:id="@+id/GPTModelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="GPT SYSTEM KOMUTU" />
+        <EditText
+            android:id="@+id/SystemKomutEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/VarsayilanPromptButonu"
+            android:onClick="VarsayilanPromptButonClicked"
+            android:text="VARSAYILAN PROMPT" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/MevcutPromptuKaydetButonu"
+            android:onClick="MevcutPromptButonClicked"
+            android:text="PROMPTU KAYDET"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
